@@ -566,6 +566,7 @@ const GooglePlacesAutocomplete = React.createClass({
             placeholder={this.props.placeholder}
             onFocus={onFocus ? () => {this._onFocus(); onFocus()} : this._onFocus}
             clearButtonMode="while-editing"
+            onBlur={this.props.onBlur}
           />
         </View>
         {this._getListView()}
